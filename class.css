@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* pengaturan header */
+.header {
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    width: 100%; /* memastikan header memanjang seluruh lebar layar */
+    z-index: 1000; /* memastikan header tetap di atas elemen lain */
+    display: flex;
+    justify-content: space-between; /* menempatkan logo dan navbar di ujung kanan */
+    align-items: center; /* memastikan logo dan menu sejajar secara vertikal */
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar{
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    
+}
+
+.header  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap; /* Agar menu bisa turun ke bawah jika layar sempit */
+    justify-content: center;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li {
+    display: inline; /* menampilkan item menu secara horizontal */
+    margin-right: 50px;  /* jarak antara item menu */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: 300ms;
+    font-weight: 600;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a:hover{
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue ;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+/* Navbar setelah di-scroll (transparan) */
+
+
+#container {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efek drop shadow */
+    border-radius: 4px; /* kelengkungan header */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 10; /* Pastikan navbar tetap di atas */
+    position: relative;
+    background-color: #001F3F;
+    color: white;
+    padding: 10px;
+}
+
+/* main */
+.judul h1{
+    margin-top: 190px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+}
+.horizontal-scroll {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    scroll-behavior: smooth;
+}
+
+.class-card-1, .class-card-2, .class-card-3, .class-card-4, .class-card-5 {
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    background-color: #1c5670;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s, box-shadow 0.6s;/* transisi untuk efek */
+    cursor: pointer;
+}
+
+.class-card-1, .class-card-2, .class-card-3, .class-card-4, .class-card-5 p{
+    color: white;
+}
+
+.class-card-1, .class-card-2, .class-card-3, .class-card-4, .class-card-5 {
+    transform: scale(1.05);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek saat hover */
+.class-card-1:hover,
+.class-card-2:hover,
+.class-card-3:hover,
+.class-card-4:hover,
+.class-card-5:hover {
+    transform: scale(1.15); /* Membesar sedikit */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar */
+}
+
+/* Efek saat diklik */
+.class-card-1.clicked,
+.class-card-2.clicked,
+.class-card-3.clicked,
+.class-card-4.clicked,
+.class-card-5.clicked {
+    transform: scale(2.1); /* Membesar sedikit lebih besar saat klik */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Bayangan lebih besar */
+}
+
+/* Footer styles */
+footer {
+    margin-top: 50px;
+    background-color: #001F3F;
+    padding: 40px 0; /* Add padding to give space inside the footer */
+}
+
+/* Container inside footer */
+.container {
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    flex-direction: column; /* Stack the items vertically */
+    text-align: center; /* Ensure all text is centered */
+    gap: 20px; /* Add space between the content blocks */
+}
+
+/* Lokasi (Address) block */
+.lokasi {
+    width: 100%; /* Ensure the width takes up full space */
+    text-align: center; /* Center the text inside */
+    padding: 5px;
+}
+
+/* Kontak block */
+.kontak {
+    width: 100%; /* Ensure the width takes up full space */
+    padding-top: 5px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+
+/* Paragraph styles inside footer */
+.container p {
+    text-align: center; /* Center text within the container */
+    color: white; /* Ensure the text is white */
+    margin: 5px 0; /* Space between paragraphs */
+}

@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* pengaturan header */
+.header {
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    width: 100%; /* memastikan header memanjang seluruh lebar layar */
+    z-index: 1000; /* memastikan header tetap di atas elemen lain */
+    display: flex;
+    justify-content: space-between; /* menempatkan logo dan navbar di ujung kanan */
+    align-items: center; /* memastikan logo dan menu sejajar secara vertikal */
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar{
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    
+}
+
+.header  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap; /* Agar menu bisa turun ke bawah jika layar sempit */
+    justify-content: center;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li {
+    display: inline; /* menampilkan item menu secara horizontal */
+    margin-right: 50px;  /* jarak antara item menu */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: 300ms;
+    font-weight: 600;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a:hover{
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue ;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+#container {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efek drop shadow */
+    border-radius: 4px; /* kelengkungan header */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 10; /* Pastikan navbar tetap di atas */
+    position: relative;
+    background-color: #001F3F;
+    color: white;
+    padding: 10px;
+}
+/* isi konten atau main */
+main {
+    padding: 20px;
+}
+
+.deskripsi h1{
+    text-align: center;
+}
+.back-button {
+    top: 135px;
+    left: 10px;
+    background-color: transparent; 
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-icon {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain;
+    margin-top: 130px;
+}
+
+.back-button:hover .back-icon {
+    opacity: 0.7;
+}
+
+
+.photo-container {
+    display: flex; /* Mengatur foto dan deskripsi agar sejajar secara horizontal */
+    justify-content: center; /* Mengatur posisi di tengah secara horizontal */
+    align-items: flex-start; /* Mengatur foto dan deskripsi sejajar di bagian atas */
+    gap: 20px; /* Memberikan jarak antar kotak */
+    padding: 20px;
+}
+
+/* Kotak Foto */
+.photo-box {
+    flex: 1; 
+    max-width: 300px; /* Lebar maksimal kotak foto */
+    border: 1px solid #ccc; /* Border berwarna abu-abu muda */
+    padding: 10px; /* Ruang di dalam kotak foto */
+    border-radius: 8px; /* Sudut kotak foto melengkung */
+    background-color: #f9f9f9; /* Latar belakang kotak foto berwarna abu-abu terang */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kotak foto */
+    text-align: center; /* Mengatur teks atau konten di dalam kotak foto menjadi rata tengah */
+}
+
+.photo {
+    width: 100%; /* Lebar foto menyesuaikan lebar kotak */
+    height: auto; /* Tinggi foto otomatis */
+    border-radius: 8px; /* Sudut foto melengkung */
+}
+/* Kotak Deskripsi */
+.description-box {
+    flex: 1; /* Menyesuaikan ukuran kotak deskripsi agar proporsional */
+    max-width: 400px; /* Lebar maksimal kotak deskripsi diperbesar */
+    min-width: 300px; /* Lebar minimal kotak deskripsi */
+    border: 1px solid #ccc; /* Border berwarna abu-abu muda */
+    padding: 90px; /* Mengatur ruang di dalam kotak deskripsi */
+    border-radius: 8px; /* Sudut kotak deskripsi melengkung */
+    background-color: #e6ecfc; /* Latar belakang kotak deskripsi berwarna biru muda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kotak deskripsi */
+    display: flex;
+    flex-direction: column; /* Menyusun teks secara vertikal */
+    justify-content: center; /* Mengatur konten berada di tengah vertikal */
+    align-items: flex-start; /* Mengatur konten berada di kiri ke kanan secara horizontal */
+}
+
+.description-box h3 {
+    margin-top: 0; /* Menghilangkan margin atas pada judul */
+    color: #333; /* Warna teks judul */
+    text-align: center; /* Mengatur teks judul agar rata tengah */
+    font-size: 40px; /* Ukuran teks judul lebih besar */
+    font-weight: bold; /* Menebalkan teks judul */
+    margin-bottom: 28px; /* Memberikan jarak di bawah judul */
+}
+
+.description-box p {
+    margin: 3px 0; /* Margin vertikal pada paragraf */
+    color: #555; /* Warna teks paragraf */
+    font-size: 18px; /* Mengatur ukuran teks paragraf */
+    line-height: 1.1; /* Mengatur jarak antar baris teks */
+    text-align: justify; /* Mengatur teks agar rata kanan kir */
+    word-spacing: 0.1;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #001F3F;
+    padding: 40px 0; 
+}
+
+
+.container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 20px; 
+}
+
+/* Lokasi */
+.lokasi {
+    width: 100%; 
+    text-align: center; 
+    padding: 5px;
+}
+
+/* Kontak */
+.kontak {
+    width: 100%; 
+    padding-top: 5px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+
+.container p {
+    text-align: center; 
+    color: white; 
+    margin: 5px 0;
+}

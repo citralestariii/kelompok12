@@ -1,0 +1,219 @@
+/* pengaturan header */
+.header {
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    width: 100%; /* memastikan header memanjang seluruh lebar layar */
+    z-index: 1000; /* memastikan header tetap di atas elemen lain */
+    display: flex;
+    justify-content: space-between; /* menempatkan logo dan navbar di ujung kanan */
+    align-items: center; /* memastikan logo dan menu sejajar secara vertikal */
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar{
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* pastikan header berada di atas */
+    left: 0;
+    
+}
+
+.header  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap; /* Agar menu bisa turun ke bawah jika layar sempit */
+    justify-content: center;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li {
+    display: inline; /* menampilkan item menu secara horizontal */
+    margin-right: 50px;  /* jarak antara item menu */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: 300ms;
+    font-weight: 600;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.navbar ul li a:hover{
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue ;
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+/* Navbar setelah di-scroll (transparan) */
+
+
+#container {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efek drop shadow */
+    border-radius: 4px; /* kelengkungan header */
+    background-color: rgba(0, 31, 63, 1); /* Warna biru solid tanpa transparansi */
+    transition: background-color 0.3s ease-in-out; /* Transisi lebih halus */
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 10; /* Pastikan navbar tetap di atas */
+    position: relative;
+    background-color: #001F3F;
+    color: white;
+    padding: 10px;
+}
+
+/*back*/
+.back-button {
+    top: 135px;
+    left: 10px;
+    background-color: #fff; /* No background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-icon {
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+    object-fit: contain;
+    margin-top: 90px;
+}
+
+.back-button:hover .back-icon {
+    opacity: 0.7; /* Optional effect on hover */
+}
+
+
+/* main */
+.judul p{
+    margin-top: 0px; /*jarak atas*/
+    text-align: center;
+    margin-bottom: 100px; /*jarak bawah*/
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-foto p{
+    color: black;
+    margin-top: 50px;
+    margin-left: 390px;/*agar teks sejajar denggan foto*/
+}
+
+.container-foto {
+    width: 100%;
+    align-items: center;
+}
+
+.container-foto img{
+    width: 15cm;/*ukuran foto*/
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+/*tabel*/
+table{
+    border: 1px;
+    border-collapse: collapse; /*penggabungan batas (border) dalam tabel (kalo ga diisi tabelnya beda beda, gamau nyatu garisnya)*/
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    border-color: black;
+    margin-left: 330px;
+}
+th{
+    border-radius: 0    px;
+    border-collapse: collapse; /*penggabungan batas (border) dalam tabel (kalo ga diisi tabelnya beda beda, gamau nyatu garisnya)*/
+    border-color: black;
+    border: 1px solid black; /*warna garis*/
+    color: black;
+}
+tr{ /*nth-child merupakan selector untuk menentukan elemen mana yg ingin di pilih (kita milih tr, di baris pertama yg ingin di ubah)*/
+    color: black; /* warna text*/
+    background-color: gray;
+    text-align: center;
+    border: 1px solid black; /*untuk garis di tr (table baris)*/
+}
+td{
+    border: 1px solid black; /*untuk garis di tabel*/
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+.absen{
+    text-align: center;
+}
+
+
+/* Footer styles */
+footer {
+    margin-top: 50px;
+    background-color: #001F3F;
+    padding: 40px 0; /* Add padding to give space inside the footer */
+}
+
+/* Container inside footer */
+.container {
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    flex-direction: column; /* Stack the items vertically */
+    text-align: center; /* Ensure all text is centered */
+    gap: 20px; /* Add space between the content blocks */
+}
+
+/* Lokasi (Address) block */
+.lokasi {
+    width: 100%; /* Ensure the width takes up full space */
+    text-align: center; /* Center the text inside */
+    padding: 5px;
+}
+
+/* Kontak block */
+.kontak {
+    width: 100%; /* Ensure the width takes up full space */
+    padding-top: 5px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+
+/* Paragraph styles inside footer */
+.container p {
+    text-align: center; /* Center text within the container */
+    color: white; /* Ensure the text is white */
+    margin: 5px 0; /* Space between paragraphs */
+}
